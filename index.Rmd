@@ -1,0 +1,98 @@
+---
+title: "Análisis espacio-temporal de la migración de estudiantes admitidos a la UN"
+subtitle: "Trabajo de maestría"
+author: "Martín Macías"
+date: "2018/03/05"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0a/Logotipo_de_la_Universidad_Nacional_de_Colombia.svg)
+
+???
+
+Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logotipo_de_la_Universidad_Nacional_de_Colombia.svg)
+
+---
+class: inverse, center, middle
+<iframe src="https://giphy.com/embed/Ft62PpMu4mzpm" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/workout-motivation-Ft62PpMu4mzpm">via GIPHY</a></p>
+# Motivación
+
+---
+
+# Dirección Nacional de Planeación y Estadística
+
+### **Fortalecimiento de la actividad estadística institucional**
+
+_*Objetivo principal:*_
+
++ Fortalecer la capacidad de gestión de la información estadística estratégica y la construcción de indicadores en la Universidad
+
+_*Objetivos específicos:*_
+
++ Establecer lineamientos conceptuales para la medición en la Universidad
+
++ Proponer indicadores estratégicos de desempeño institucional
+
++ Construir el primer Plan Estadístico Estratégico de la Universidad Nacional de Colombia
+
++ Construir una guía metodológica que promueva y facilite la construcción de indicadores de gestión por procesos
+
+---
+class: center, middle
+<iframe src="https://giphy.com/embed/JkECVKwJIP4Tm" width="385" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pencil-JkECVKwJIP4Tm">via GIPHY</a></p>
+La antigua [Oficina Nacional de Planeación](http://www.onp.unal.edu.co)
+---
+class: inverse, center, middle 
+<iframe src="https://giphy.com/embed/CTX0ivSQbI78A" width="480" height="355" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/internet-computer-technology-CTX0ivSQbI78A">via GIPHY</a></p>
+# Lo que estamos haciendo
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+source("aspirantes-graphs.R", encoding = 'UTF-8')
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+CAT_EDAD_SERIE
+```
+
+---
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+ESTRATO_TORTA
+```
+---
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+ESTRATO_TABLA
+```
+---
+background-image: url(http://memecrunch.com/image/4fb6f2011861336f99007223.jpg?w=400)
+background-position: 50% 50%
+class: center, bottom, inverse
+
+# El problema
+
+---
+class: center, bottom, inverse
+<iframe src="https://giphy.com/embed/3o6Mbj2w67HnPQKgcE" width="480" height="366" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-9-the-simpsons-9x8-3o6Mbj2w67HnPQKgcE">via GIPHY</a></p>
+# Posibles soluciones
+---
+# Aproximaciones 
+- Análisis espacio-temporal
+  - Estructuras de correlación espacial o temporal
+- Lattices
+- Datos espaciales con estructura de pánel (si analizamos los municipios a través del tiempo)
+- Análisis de fenómenos demográficos 
+  - Influencia de procedencia del admitido (urbana o rural)
+  - Colegios privados o públicos
+  - ¿Migración en función de la educación?
+  - Inscrito vs. Admitido
+- Caracterización del perfil del admitido de la UN
+---
+
+class: center, middle
+<iframe src="https://giphy.com/embed/whhgbV7Tzete8" width="480" height="333" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/90s-thank-you-animaniacs-whhgbV7Tzete8">via GIPHY</a></p>
+# ¡Gracias!
+
+Estas diapositivas se hicieron gracias al paquete [**xaringan**](https://github.com/yihui/xaringan) de R, desarrollado por [Yihui Xie](https://yihui.name).
